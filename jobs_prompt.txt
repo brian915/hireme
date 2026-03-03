@@ -1,0 +1,387 @@
+<PROMPT>
+<ROLE>You are my assistant and a job placement expert.</ROLE>
+<TASKS>
+As part of my search please draft the following for the attached job description (<JOB_DESCRIPTION />):
+- Cover letter.
+- One sentence answer to the question "why would I want to work for this company".
+- Note to send to the hiring manager or recruiter.
+- Polite follow-up message.
+
+Use the included <JOB_DESCRIPTION /> section  as the target position.
+Use the <TEMPLATES /> section and <EXAMPLES /> section as a basis for style, tone, word choice and format.
+Refer to the <RULES /> section and <STYLE /> section for more guidance.
+</TASKS>
+
+<OUTPUT_FORMAT>
+1. Role Suitability Ranking
+Score: <SCORE> out of 5
+Explanation: <ONE_PARAGRAPH_SUMMARY_OF_SCORE>
+----
+2. Cover Letter
+<COVER_LETTER_DRAFT>
+----
+3. One Sentence Answer to the Question: "Why would I want to work for this company?"
+<ONE_SENTENCE_ANSWER>
+----
+4. Note to Hiring Manager or Recruiter
+<NOTE_TO_HIRING_MANAGER>
+----
+5. Polite Follow-Up Message
+<FOLLOW-UP_MESSAGE>
+----
+6. Job Description (paste exactly as provided between <JOB_DESCRIPTION> tags)
+</OUTPUT_FORMAT>
+
+<RULES>
+- Do not copy examples verbatim.
+- Do not provide any other unrequested information.
+- Paste the job description exactly, no edits.
+- No EM dashes, prefer periods or commas, use semicolons when they read naturally.
+- For lists following a phrase, use a colon, even if it is less elegant or grammatically correct.
+- Do not add my name and contact information to the cover letter header.
+- Do not use emojis.
+- No follow-up questions or suggested actions.
+<RESUME_RULES>
+- Job History Details must only come from <RESUME>
+- Company and Role facts can come from <JOB_DESCRIPTION>.
+- Do not invent anything beyond the inputs of <RESUME> and <JOB_DESCRIPTION>.
+- Resume is included below. Never reference anything not listed in it.
+- If there are not direct links between my background and the job requirements, it is better to write less than to stretch a connection.
+- ML/AI/LLM requirements should NOT be a disqualifier.
+</RESUME_RULES>
+</RULES>
+
+<STYLE>
+- Always defer to my style: straightforward, somewhat informal, never fake.
+- Value accuracy of word choice, clarity of expression, and compression of thought.
+- Avoid overwriting, excessive superlatives, or hackneyed phrases.
+- Avoid fabricated responsibilities, hallucinations, or skills.
+- Do not squeeze too many ideas into a single sentence.
+- Never use “eager,” “excited,” or similar inauthentic, overly effusive phrasing.
+- Do not sign off with “Best regards,” “Best,” or “Warmest regards.” Only use “Sincerely,”.
+- Never position me as “eager” for anything.
+- Write in literate, educated, American English.  Slightly formal, never corny or exaggerated.
+</STYLE> 
+
+<SCORING_RUBRIC>
+- Rank the role in terms of suitability, on a scale of 1-5, based on what you know about my current job search requirements.
+- A score of 1= clearly out of scope for my stated constraints, 5 = strong match on role level, scope, and company criteria.
+- Use whole-number scores only (1, 2, 3, 4, 5).
+- For item 1 (Role Suitability Ranking) only: do not use first person.
+- Do not penalize the score for missing technologies, score primarily on role scope, leadership level, domain fit, and company criteria.
+- Flag vague, buzzword-heavy, or mismatched roles in the ranking.
+- If the job description indicates significant hands-on coding expectations (IC deliverables, “player-coach” emphasis, on-call as primary, “must be hands-on”), or discusses any percentage of duties of  hands-on vs management, cap the overall score at 2 regardless of other factors.
+</SCORING_RUBRIC>
+
+<JOB_SEARCH_CONTEXT>
+- I am currently engaged in a job search.
+- I am an experienced engineering leader seeking a leadership role ranging across the following roles: Vice President of Engineering, Vice President of Software Engineering, Head of Engineering, Senior Director of Engineering, Senior Director of Software Engineering, Director of Software Engineering, Director of Engineering, Senior Software Engineering Manager, Senior Engineering Manager, Software Engineering Manager, Engineering Manager.
+- Preferably at a Series A to C startup or growth-stage SaaS company.
+- I am only considering Remote roles at this stage unless they are in the Washington DC / Baltimore Maryland area (not Virginia).
+
+I prefer companies that:
+- Build customer-facing B2B, B2C, or B2B2C products
+- Operate in industries such as Digital Media, Social Media, Enterprise Software, Consumer Software, AI, Generative AI, SaaS, Media & Entertainment
+- Emphasize mission-driven, human-centered design and technology
+- Value engineering excellence, strategic leadership, and scaling teams and platforms responsibly
+
+I would normally avoid the following categories but will consider appropriate jobs that match my background:
+- Finance, Fintech, Energy, Medicine-related Healthcare companies (SaaS products serving Healthcare are OK)
+- Security companies, pure infrastructure, or government/military contractors
+- Consumer-focused Mental Health or Physical Fitness/Holistic Wellness companies are within consideration.
+</JOB_SEARCH_CONTEXT>
+
+<JOB_SEARCH_STRATEGY>
+My strategy includes applying directly to engineering leadership/engineering management roles.
+I evaluate each opportunity not just for title alignment but for alignment, or "fit" with prior experience.
+</JOB_SEARCH_STRATEGY>
+
+
+<TEMPLATES>
+
+<COVER_LETTER_TEMPLATE>
+<SALUTATION>
+Greetings,
+</SALUTATION>
+<1st PARAGRAPH - OPENING> 
+<EXAMPLE_FIRST_PARAGRAPH_-_OPENING_HOOK>
+MyFitnessPal’s mission to empower people to make healthier choices resonates with me.
+[Supporting sentence on how my experience fits role/company.]
+</EXAMPLE_FIRST_PARAGRAPH_-_OPENING_HOOK>
+
+<EXAMPLE_SECOND_PARAGRAPH_-_SUPPORTING_DETAIL>
+[How my background aligns with the role/company.]
+<EXAMPLE_SECOND_PARAGRAPH_-_SUPPORTING_DETAIL>
+
+<EXAMPLE_THIRD_PARAGRAPH_-_SPECIFIC_DETAILS>
+[Detail on my experience related to the role.]
+</EXAMPLE_THIRD_PARAGRAPH_-_SPECIFIC_DETAILS>
+
+<EXAMPLE_FOURTH_PARAGRAPH_-_CLOSE>
+[Straightforward close.]
+
+Sincerely,
+Brian Runk
+</EXAMPLE_FOURTH_PARAGRAPH_-_CLOSE>
+
+</COVER_LETTER_TEMPLATE>
+
+<ONE_SENTENCE_ANSWER_TEMPLATE>
+I want to work at [company name] because it is a [company identity and impact], [how the company is effecting that impact].
+</ONE_SENTENCE_ANSWER_TEMPLATE>
+
+<NOTE_TO_HIRING_MANAGER_TEMPLATE>
+Hi [Recruiter/Manager First Name],
+
+I just submitted my application for the [job title] position and wanted to reach out directly. [company name] mission and the scope of this role are a strong fit for my experience leading engineering and product teams.
+
+I’d welcome the chance to connect or discuss further,
+
+Brian Runk
+</NOTE_TO_HIRING_MANAGER_TEMPLATE>
+
+<FOLLOW-UP_MESSAGE_TEMPLATE>
+Hi [First Name],
+
+I’m following up on my application for the position of [job title]. I remain very interested in the opportunity to help [details about potential contribution] and would be happy to provide any additional information or discuss my experience further.
+
+Thank you,
+
+Brian Runk
+</FOLLOW-UP_MESSAGE_TEMPLATE>
+</TEMPLATES>
+
+<EXAMPLES>
+
+<EXAMPLE_COVER_LETTER>
+Greetings,
+
+MyFitnessPal’s mission to empower people to make healthier choices resonates with me. I am drawn to roles where technology directly impacts users’ lives, and I have led teams responsible for building and scaling customer experiences for millions of people at companies like Sparkfund, Etsy, and Constant Contact.
+
+Throughout my career, I have partnered closely with Product and Design to deliver features that balance business goals with technical quality, always focusing on clear outcomes. I have led high-performing engineering teams through periods of growth and transformation, emphasizing predictable delivery, platform reliability, and continuous improvement. My approach is hands-on and pragmatic: I invest in process, foster cross-functional communication, and focus on team health and development.
+
+At Sparkfund, I oversaw the delivery of a complex SaaS platform, introducing Agile processes and metrics to drive clarity and accountability. At Etsy and Constant Contact, I managed large-scale migrations and unified customer-facing systems, maintaining stability while enabling rapid iteration. I have consistently prioritized quality, mentorship, and the kind of collaboration that leads to meaningful product evolution.
+
+I would welcome the opportunity to support MyFitnessPal’s mission, lead teams through the next phase of growth, and help deliver innovative features that improve daily engagement and user outcomes.
+
+Sincerely,
+
+Brian Runk
+</EXAMPLE_COVER_LETTER>
+
+<EXAMPLE_ONE_SENTENCE_ANSWER>
+I want to work at MyFitnessPal because it is a mission-driven company with real impact, building software that helps millions of people make healthier choices every day.
+</EXAMPLE_ONE_SENTENCE_ANSWER>
+
+<EXAMPLE_RECRUITER_NOTE>
+Hi [Recruiter/Manager First Name],
+
+I just submitted my application for the Sr. Manager, Engineering position and wanted to reach out directly. MyFitnessPal’s mission and the scope of this role are a strong fit for my experience leading engineering and product teams.
+
+I’d welcome the chance to connect or discuss further,
+
+Brian Runk
+</EXAMPLE_RECRUITER_NOTE>
+
+<EXAMPLE_FOLLOW-UP_MESSAGE>
+Hi [First Name],
+
+I’m following up on my application for the position of Sr. Manager, Engineering. I remain very interested in the opportunity to help deliver impactful health and wellness features at scale and would be happy to provide any additional information or discuss my experience further.
+
+Thank you,
+
+Brian Runk
+</EXAMPLE_FOLLOW-UP_MESSAGE>
+</EXAMPLES>
+
+<RESUME>  
+BRIAN RUNK
+Annapolis, Maryland
+brian@brianrunk.net
+linkedin.com/in/brianrunk
+
+Senior technology leader with expertise in aligning engineering work to business goals, delivering measurable outcomes at multi-million-user scale.
+Transformed organizations through improved communication cadence and process implementation, enabling predictable releases and increased quality.
+Modernized and unified customer platforms impacting millions of customers and supporting 10M+ interactions per hour with uptime ≥ 98%.
+Built diverse, high-performing teams through deliberate talent development and mentoring, maintaining retention during periods of rapid growth and change.
+
+Core Competencies
+
+- Technology Strategy
+- Product Roadmapping
+- Scaling Engineering Organizations
+- Program Leadership
+- Agile Delivery
+- Cloud Platforms
+- DevOps, CI/CD
+- Observability
+- Security, Compliance
+- Platform Migrations
+- Stack Modernization
+- Data Platforms
+- AI and ML Initiatives
+- SDLC Excellence
+- Executive Communication
+- Talent Development
+
+Director of Technology, Research & Development
+FINRA
+November 2023 - July 2025
+
+- Streamlined R&D program with a $3M annual budget, sponsoring investigations that helped accelerate innovation across the enterprise.
+- Standardized proposal generation, reducing time from approval to kickoff and increasing projects and participation by 25%.
+- Doubled executive review cadence and raised approvals to 98% by linking topics to enterprise strategy.
+- Guided cross-functional teams supporting 8–10 concurrent research efforts, strengthening internal capability in graph, ML, and AI.
+- Presented monthly findings to 250+ stakeholders, driving adoption of new technology.
+- Directed AI-focused initiatives spanning SDLC improvements, LLM workflows, document summarization, and generative AI risks.
+
+Sr. Director of Software Engineering
+Sparkfund
+August 2019 - March 2023
+
+- As senior-most engineering leader, implemented a multi-quarter roadmap with on-time delivery rate of 95%.
+- Oversaw development of the full-stack SparkOS platform, sharing previously siloed information between companies.
+- Introduced Agile processes and KPIs and fostered cross-departmental coordination.
+- Established CI/CD pipeline, increasing deployment frequency while lowering error rates.
+- Drove Sparkfund's first security audit, delivering SOC 1/SOC 2 compliance, supporting partner and M&A due diligence.
+
+Engineering Manager
+Etsy
+January 2016 - July 2019
+
+- Assembled and guided a diverse team of 20+ high-performing software engineers through significant organizational changes.
+- Directed migration of core marketing infrastructure while maintaining business continuity for a system serving 10M+ messages per hour.
+- Integrated 24/7 global customer support solution, enabling thousands of daily interactions while achieving significant cost savings.
+
+Engineering Manager
+Constant Contact
+December 2012 - December 2015
+
+- Oversaw development and release of main CRM application rewrite, migrating 650,000 customers over 6 months with controlled cutovers.
+- Recruited 20+ engineers, building out diverse, full-stack teams in Boston and New York City. Created apprenticeship program to grow high-potential candidates.
+- Instituted a quality focus that eliminated a 300+ issue backlog and cut new defect rates by 80%.
+
+Manager of Development
+America’s Test Kitchen
+November 2010 - November 2012
+
+- Led creation of the ATK Online Cooking School, achieving highest retention of any product in company history.
+- Managed migration of 2M+ users on multiple sites, featuring a unified database and single sign-on, improving cross-property access and reliability.
+
+Lieutenant, United States Coast Guard, 1990 - 1994
+
+Bachelor of Arts, Language & Literature, 1990
+St. Mary’s College of Maryland
+</RESUME>  
+<JOB_HISTORY_BULLET_LIBRARY>
+
+<RULES>
+- Company names included for traceability
+- One metric per bullet for easy verification
+<RULES>
+<TEAM_LEADERSHIP_AND_SCALING_BULLETS>
+- Built and scaled engineering team from 0 to 20+ engineers at Constant Contact, recruiting across Boston and New York City
+- Assembled and guided a diverse team of 20+ high-performing software engineers at Etsy through significant organizational changes
+- Maintained team stability during 3x organizational growth at [Company - specify when using]
+- Created apprenticeship program at Constant Contact to grow high-potential candidates into engineers
+- Managed distributed engineering teams across multiple time zones at [Company]
+- Guided cross-functional teams supporting 8-10 concurrent research efforts at FINRA, strengthening internal capability in graph, ML, and AI
+- Recruited 20+ engineers building out diverse, full-stack teams in Boston and New York City at Constant Contact
+
+< Platform Migrations & Modernization
+
+- Directed migration of core marketing infrastructure at Etsy while maintaining business continuity for a system serving 10M+ messages per hour
+- Oversaw development and release of main CRM application rewrite at Constant Contact, migrating 650,000 customers over 6 months with controlled cutovers
+- Managed migration of 2M+ users on multiple sites at America's Test Kitchen, featuring unified database and single sign-on
+- Oversaw development of the full-stack SparkOS platform at Sparkfund, sharing previously siloed information between companies
+- Led platform unification efforts connecting [X] products into cohesive ecosystem at [Company]
+- Modernized customer platforms impacting millions of customers, supporting 10M+ interactions per hour with uptime ≥ 98%
+
+< Process & Delivery Excellence
+
+- Implemented multi-quarter roadmap at Sparkfund with on-time delivery rate of 95%
+- Transformed organizations through improved communication cadence and process implementation, enabling predictable releases and increased quality
+- Introduced Agile processes and KPIs at Sparkfund, fostering cross-departmental coordination
+- Established CI/CD pipeline at Sparkfund, increasing deployment frequency while lowering error rates
+- Instituted quality focus at Constant Contact that eliminated 300+ issue backlog and cut new defect rates by 80%
+- Standardized proposal generation at FINRA, reducing time from approval to kickoff and increasing projects and participation by 25%
+- Doubled executive review cadence at FINRA, raising approvals to 98% by linking topics to enterprise strategy
+
+< Security & Compliance
+
+- Drove Sparkfund's first security audit, delivering SOC 1/SOC 2 compliance supporting partner and M&A due diligence
+- Established security practices ensuring compliance with [specific standards] at [Company]
+- Led compliance initiatives for regulated environment at [Company]
+
+< AI/ML & Innovation (FINRA-specific)
+
+- Streamlined R&D program at FINRA with $3M annual budget, sponsoring investigations that helped accelerate innovation across enterprise
+- Directed AI-focused initiatives at FINRA spanning SDLC improvements, LLM workflows, document summarization, and generative AI risks
+- Presented monthly findings to 250+ stakeholders at FINRA, driving adoption of new technology
+- Guided teams strengthening internal capability in graph, ML, and AI technologies at FINRA
+
+< Cross-Functional Leadership & Communication
+
+- Partnered with Product, Operations, and Executive Leadership to align technology investments with company objectives and customer outcomes
+- Collaborated with product managers and stakeholders to define project scope, timelines, and deliverables
+- Presented technical strategy and outcomes to executive stakeholders and board members
+- Aligned engineering work to business goals, delivering measurable outcomes at multi-million-user scale
+
+< System Scale & Reliability
+
+- Maintained business continuity for system serving 10M+ messages per hour at Etsy
+- Delivered platforms supporting millions of customers with uptime ≥ 98%
+- Integrated 24/7 global customer support solution at Etsy, enabling thousands of daily interactions while achieving significant cost savings
+- Led creation of product at America's Test Kitchen achieving highest retention of any product in company history
+
+< Technical Architecture & Infrastructure
+
+- Established CI/CD pipeline increasing deployment frequency while lowering error rates at Sparkfund
+- Managed unified database and single sign-on implementation improving cross-property access and reliability at America's Test Kitchen
+- Oversaw development of full-stack platform sharing previously siloed information between companies at Sparkfund
+- Led cloud infrastructure modernization initiatives at [Company]
+- Drove adoption of microservices architecture at [Company]
+
+< Budget & Resource Management
+
+- Managed R&D program with $3M annual budget at FINRA
+- Oversaw engineering budget of $[X] at [Company]
+- Led cost optimization initiatives saving $[X] annually at [Company]
+
+<MENTORING_AND_DEVELOPMENT>
+- Built diverse, high-performing teams through deliberate talent development and mentoring
+- Created apprenticeship program growing high-potential candidates into engineers at Constant Contact
+- Conducted regular 1:1 meetings for performance, goals, and career growth discussions
+- Provided technical guidance, mentorship, and career development support to team members
+
+---
+
+<USAGE_NOTES>
+**For Platform/Migration roles:**
+- Lead with migration bullets (Etsy 10M+ messages/hour, Constant Contact 650K customers, ATK 2M+ users)
+- Add process excellence bullets (95% on-time delivery, 80% defect reduction)
+- Include 1-2 team scaling bullets
+
+**For AI/ML roles:**
+- Lead with FINRA AI/ML bullets
+- Add innovation/R&D bullets
+- Include cross-functional leadership bullets
+
+**For Team Scaling roles:**
+- Lead with team building bullets (20+ engineers, apprenticeship programs)
+- Add retention/stability bullets
+- Include process implementation bullets
+
+**For Security/Compliance roles:**
+- Lead with SOC compliance bullet
+- Add regulated environment experience
+- Include quality/process bullets
+
+**For VP/Director Strategy roles:**
+- Lead with executive communication bullets
+- Add budget management bullets
+- Include alignment with business goals bullets
+</JOB_HISTORY_BULLET_LIBRARY>
+</PROMPT>  
+
+
