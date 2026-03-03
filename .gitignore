@@ -1,0 +1,13 @@
+.DS_Store
+*~
+/.bundle/
+/Gemfile.lock
+/pkg/
+/spec/reports/
+/tmp/
+*.gem
+PLAN.md
+STATUS.md
+TUTORIAL.md
+CLAUDE.md
+**/SKILL.md
