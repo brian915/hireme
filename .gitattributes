@@ -1,0 +1,4 @@
+# API keys, credentials and other secrets
+**/secrets.yml filter=git-crypt diff=git-crypt
+# private overlay files, for integration during build
+**/SKILL.private.md filter=git-crypt diff=git-crypt
